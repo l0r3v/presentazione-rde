@@ -31,24 +31,34 @@
   \end{itemize}
 \end{frame}
 \begin{frame}
-  Se la velocità della combustione avviene a velocità inferiori a quella del suono si parla di \textbf{Deflagrazione}.
+  \frametitle{Combustione}
+  In generale un motore è macchina che trasforma una sorgente di energia in energia meccanica.
+  Per effettuare questa trasformazione si può fare avvenire una reazione di combustione ed espellere i gas combusti che ne derivano.
+  La combustione, sebbene non sia l'unico metodo per accelerare le particelle espulse, è il metodo più comune e utilizzato.
+\end{frame}
+\begin{frame}
+  \frametitle{Deflagrazione}
+  Se la velocità della combustione è inferiore a quella del suono si parla di \textbf{Deflagrazione}.
   \begin{figure}
     \includegraphics[scale = 0.4]{deflag_expl.png}
   \end{figure}
 \end{frame}
 \begin{frame}
-Se la velocità della combustione avviene a velocità superiori a quella del suono si parla di \textbf{Detonazione}.
+  \frametitle{Detonazione}
+Se la combustione avviene a velocità superiori a quella del suono si parla di \textbf{Detonazione}.
   \begin{figure}
     \includegraphics[scale = 0.4]{detonation_expl.png}
   \end{figure}
 \end{frame}
 \begin{frame}
+  \frametitle{Analisi Termodinamica}
   \twominisw{  \includegraphics[scale=0.3]{Cicli Wolanski.png} 
   }{
   La maggior parte dei cicli termodinamici che utilizzano una deflagrazione seguono un ciclo Brayton (in blu). Se avviene una detonazione la turbina lavora in maniera quasi isocora e il ciclo termodinamico è quello di Fickett-Jacobs. Nel ciclo di Humphrey si suppone che la combustione avvenga a volume costante. 
 }{.6}{.39}
 \end{frame}
 \begin{frame}
+  \frametitle{Analisi Termodinamica}
   \twominisw{
     \begin{gather*}
       \eta_B = 1 - \frac{1}{\left( \frac{p_2}{p_1} \right)^{\frac{k-1}{k}}} \\
@@ -60,6 +70,7 @@ Se la velocità della combustione avviene a velocità superiori a quella del suo
   }{.5}{.45}
 \end{frame}
 \begin{frame}
+  \frametitle{Analisi Termodinamica}
   \begin{table}[h!]
        \begin{tabular}{|c | c | c | c | }
     	 \hline
@@ -73,6 +84,7 @@ Se la velocità della combustione avviene a velocità superiori a quella del suo
 Nella tabella vengono calcolati per vari combustibili i valori di efficienza dei vari cicli termodinamici, per mettere in evidenza come il ciclo Fickett-Jacobs (J) sia il più efficiente se confrontato con i cicli Humphrey (H) e Brayton (B).
 \end{frame}
 \begin{frame}
+  \frametitle{Propulsori a detonazione intermittente}
   I primi utilizzi della detonazione come sistema propulsivo riguardano i propulsori ad onda di detonazione (PDEs). 
     \begin{figure}[H]
       \centering
@@ -81,11 +93,15 @@ Nella tabella vengono calcolati per vari combustibili i valori di efficienza dei
     Nella camera di combustione viene immessa una miscela di ossidante e combustibile, che poi viene accesa. Il profilo di combustione è composto da una componente di deflagrazione, una fase transitoria da deflagrazione a detonazione e la detonazione.
 \end{frame}
 \begin{frame}
+  \frametitle{Propulsori a detonazione intermittente}
   \textbf{Problematiche dei PDEs}
-  - Per ogni ciclo la camera deve essere liberata e la miscela reimmessa, limitando la frequenza dei cicli possibili ad ordini dei 100 Hz. Il che non solo abbassa l'efficienza del sistema propulsivo ma lo rende impraticabile per la propulsione, non approssimando sufficientemente una propulsione continua. In alcuni modelli per liberare la camera completamente dai prodotti della combustione residui che potrebbero influenzare il ciclo successivo, si raggiungono anche frequenze operative di circa 50 Hz. 
-  - Le dimensioni della camera di combustione devono essere sufficienti per fare avvenire la transizione da deflagrazione a detonazione. Per ridurre le dimensioni è possibile mettere degli ostacoli per accelerare la transizione, ma questo riduce l'impulso specifico $ I _{sp} $.
+  \begin{itemize}
+    \item pochi cicli possibili (100-50 Hz)%Per ogni ciclo la camera deve essere liberata e la miscela reimmessa, limitando la frequenza dei cicli possibili ad ordini dei 100 Hz. Il che non solo abbassa l'efficienza del sistema propulsivo ma lo rende impraticabile per la propulsione, non approssimando sufficientemente una propulsione continua. In alcuni modelli per liberare la camera completamente dai prodotti della combustione residui che potrebbero influenzare il ciclo successivo, si raggiungono anche frequenze operative di circa 50 Hz. 
+    \item dimensioni elevate%Le dimensioni della camera di combustione devono essere sufficienti per fare avvenire la transizione da deflagrazione a detonazione. Per ridurre le dimensioni è possibile mettere degli ostacoli per accelerare la transizione, ma questo riduce l'impulso specifico $ I _{sp} $.
+  \end{itemize}
 \end{frame}
 \begin{frame}
+  \frametitle{Propulsori a detonazione rotante}
   Una soluzione alternativa è rimuovere la necessità di ripetere la transizione da deflagrazione a detonazione e riuscire ad alimentare e sostenere la reazione di detonazione. Partendo da questo approccio si giunge alla concettualizzazione dei propulsori a detonazione rotante.
 \begin{figure}[H]
 \centering
@@ -93,9 +109,66 @@ Nella tabella vengono calcolati per vari combustibili i valori di efficienza dei
 \end{figure}
 \end{frame}
 \begin{frame}
-%  \begin{figure}[H]
-%\centering
-%\includegraphics[scale=.2]{cross_rde.png}
-%\end{figure} 
+  \frametitle{Propulsori a detonazione rotante}
+  Un propulsore a detonazione rotante è composto da una camera di combustione ad anello, nella quale vengono iniettati ossidante e combustibile. 
+
+ Un onda di detonazione viene avviata all'interno della camera, che poi si propaga intorno alla camera di combustione, e date le costrizioni geometriche, genera un onda di pressione che si espande ed viene espulsa, generando una spinta. Fintanto che vengono forniti i reagenti della reazione di combustione, l'onda si autosostiene. 
+\end{frame}
+%\begin{frame}
+%  Nonostante i vantaggi, lo sviluppo pratico dei motori a detonazione rotante è limitato dagli stumenti per il design e l'analisi di questi sistemi. 
+%  Questi limiti sono l'oggetto di tutti gli studi che riguardano gli RDEs.
+%\end{frame}
+\begin{frame}
+  \frametitle{Accensione e DDT}
+  Uno dei metodi utilizzati sono i \textit{detonator tubes} posizionati in maniera tangenziale rispetto alla camera di combustione, dove avviene la DDT iniziale, utilizzati regolarmente nei test e che si sono dimostrati abbastanza affidabili (producono una detonazione autosostenente nel 95\% dei casi) soprattutto se confrontati con l'iniziazione diretta in camera di combustione (solo al 40\%).
+  Nonostante l'alta affidabilità l'utilizzo di un DDT tube può portare ad una riduzione della velocità di propagazione della detonazione fino al 60\%.
+\end{frame}
+\begin{frame}
+  \frametitle{Propellenti}
+  La scelta della miscela corretta di combustibile e comburente è fondamentale sia per i parametri di spinta ed efficienza che per la stabilità del motore. 
+
+Per la stabilità abbiamo le seguenti indicazioni sperimentali:
+  \begin{itemize}
+    \item Miscela fuel-rich
+    \item alta portata massica
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \centering
+  \begin{tabular}{| c | c | c | c | c |}
+    \hline
+    \textbf{Propellente} & $ V_{det} $  & $ P_{det} $ & $ {\Delta}H_r $  & $ I _{sp} $   \\ \hline 
+    $ H_2 /O_2 $ & 2836 & 18.5 & 8.43 & 289.39 \\ \hline 
+    $H_2 / Aria $ & 1964 & 15.5 & 3.48 & 200.41 \\ \hline 
+    $C_2H_4 / O_2 $ & 2382 & 31.9 & 5.23 & 243.06 \\ \hline 
+    $C_2H_4 / Aria $ & 1821 & 18.2 & 2.85 & 185.82 \\ \hline 
+    $C_2H_6 / O_2 $ & 2257 & 29.0 & 4.87 & 230.31 \\ \hline 
+    $C_2H_6 / Aria $ & 1170 & 15.8 & 2.49 & 174.49 \\ \hline 
+    $C_3H_8 / O_2 $ & 2354 & 34.2 & 5.18 & 240.20 \\ \hline 
+    $C_3H_8 / Aria $ & 1797 & 17.5 & 2.80 & 183.37 \\  
+    \hline
+  \end{tabular}
+\end{frame}
+\begin{frame}
+  \frametitle{Iniezione}
+  I risultati sperimentati trovati sono:
+  \begin{itemize}
+    \item alte velocità di iniezione portano a combustioni incomplete
+    \item aumentare l'area di iniezione aumenta l'efficienza del propulsiore.
+    \item diminuire la differenza di pressione può causare ritorni di fiamma.
+  \end{itemize}
+  Nella maggior parte dei casi pratici non viene utilizzata una miscela di combustibile e comburente per paura di \textit{flashbacks}. 
+\end{frame}
+\begin{frame}
+  \frametitle{Analisi di un caso: NASA}
+  Durante l'estate del 2022 la NASA in collaborazione In Space LLC ha effettuato diversi static fire test al Marshall SFC per calcolare sperimentalmente le prestazioni di un RDEs.
+
+  Il sistema è stato construito utilizzando una lega di rame (GRCop-42 e GRCop-84), e tecniche manifatturiere di tipo AM (L-PBF).
+  
+  I test sono stati eseguiti con due coppie di propellente, $ LCH_4/LOx $ e $ GH_2/LOx $.  
+\end{frame}
+\begin{frame}
+  \frametitle{Risultati}
+  Il test più lungo è durato 113 secondi
 \end{frame}
 \end{document}
